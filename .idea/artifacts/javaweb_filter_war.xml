@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="javaweb-filter:war">
+    <output-path>$PROJECT_DIR$/javaweb-filter/target</output-path>
+    <root id="archive" name="javaweb-filter.war">
+      <element id="artifact" artifact-name="javaweb-filter:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -30,7 +30,7 @@
     <!--先开启MVC的注解扫描-->
     <mvc:annotation-driven/>
     <!--开启注解扫描-->
-    <context:component-scan base-package="com.zkn.spring.miscellaneous"/>
+    <context:component-scan base-package="com.zkn.spring.miscellaneous.controller"/>
     <!-- 资源管理 -->
     <mvc:resources location="/resources/" mapping="/resources/**"/>
     <mvc:resources location="/upload/" mapping="/upload/**"/>

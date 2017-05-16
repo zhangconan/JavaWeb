@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * @date 2017/05/16
  */
 @Controller
-public class ClassFromWhichJAR {
+public class ClassFromWhichJARController {
     private static final String ERR_MESSAGE = "请输入正确的类名!";
 
     @RequestMapping("/classFromWhichJar")

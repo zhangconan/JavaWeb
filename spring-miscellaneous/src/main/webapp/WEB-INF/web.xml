@@ -14,7 +14,7 @@
   </context-param>
   <!-- 配置SpringMVC Servlet -->
   <servlet>
-    <servlet-name>javaweb-filter</servlet-name>
+    <servlet-name>spring-miscellaneous</servlet-name>
     <!-- SpringMVC 分发器 -->
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
     <!-- 更改SpringMVC配置文件的名字 默认的是spring-mvc-servlet.xml -->
@@ -25,7 +25,7 @@
     <load-on-startup>1</load-on-startup>
   </servlet>
   <servlet-mapping>
-    <servlet-name>javaweb-filter</servlet-name>
+    <servlet-name>spring-miscellaneous</servlet-name>
     <url-pattern>/</url-pattern>
   </servlet-mapping>
   <!-- 配置监听器 用来载入上下文配置文件 -->

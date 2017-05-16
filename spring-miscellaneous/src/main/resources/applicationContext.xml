@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-       http://www.springframework.org/schema/beans/spring-beans.xsd"
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-3.2.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop-3.2.xsd"
        default-autowire="byName">
-
-
+    <!--开启注解-->
+    <context:annotation-config/>
+    <!--扫描基础包 这里要注意的是如果SpringMVC和Spring扫描的包是一样的话，AOP的配置可能会失效-->
+    <context:component-scan base-package="com.zkn.spring.miscellaneous.service"/>
+    <context:component-scan base-package="com.zkn.spring.miscellaneous.aop"/>
+    <!--配置AOP proxy-target-class为true的时候是用Cglib动态代理，false的时候启用JDK动态代理-->
+    <!--自我调用的第一种解决方式 设置expose-proxy=true 在被代理的类中通过AopContext获取被代理的对象，然后通过代理对象调用方法
+        这种方式的缺点是：需要手工修改每个代理类
+        <aop:aspectj-autoproxy proxy-target-class="true" expose-proxy="true"/>
+    -->
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
 </beans>

@@ -1,3 +1,7 @@
 /javaweb-filter/target/
 /*/target/
 /.idea/
+/.idea/*/
+/.idea/artifacts
+/.idea/inspectionProfiles
+/.idea/libraries

@@ -10,7 +10,9 @@
     <packaging>war</packaging>
     <name>Spring中的各种杂项的测试学习</name>
     <url>http://maven.apache.org</url>
-
+    <properties>
+        <tomcat-version>8.0.33</tomcat-version>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>org.aspectj</groupId>
@@ -21,6 +23,11 @@
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
             <version>1.2.17</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-core</artifactId>
+            <version>${tomcat-version}</version>
         </dependency>
     </dependencies>
 

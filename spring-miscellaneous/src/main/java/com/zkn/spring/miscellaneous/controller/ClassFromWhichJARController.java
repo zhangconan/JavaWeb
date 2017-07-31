@@ -9,6 +9,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.context.request.RequestAttributes;
+import org.springframework.web.context.request.RequestContextHolder;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 /**
  * Created by wb-zhangkenan on 2017/5/16.
@@ -23,8 +28,10 @@ public class ClassFromWhichJARController {
 
     @RequestMapping("/classFromWhichJar")
     @ResponseBody
-    public String getClassPath(String className) {
+    public String getClassPath(String className) {HttpServletRequest request = (HttpServletRequest) RequestContextHolder.getRequestAttributes().resolveReference(RequestAttributes.REFERENCE_REQUEST);
 
+        HttpSession httpSession = request.getSession();
+        httpSession.setAttribute("zhang","san");
         if (StringUtils.isEmpty(className)) {
             return ERR_MESSAGE;
         }

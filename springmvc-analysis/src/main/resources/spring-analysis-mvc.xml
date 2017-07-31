@@ -8,6 +8,8 @@
 		http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd"
        default-autowire="byName">
 
+    <mvc:annotation-driven />
+
     <!-- 内部资源视图解析器  prefix + logicName + suffix /WEB-INF/jsps/ + index + .jsp-->
     <bean id="internalResourceViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <!-- 前缀 -->

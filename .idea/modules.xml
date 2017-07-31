@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/javaweb-filter/javaweb-filter.iml" filepath="$PROJECT_DIR$/javaweb-filter/javaweb-filter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-webfilter/javaweb-filter.iml" filepath="$PROJECT_DIR$/spring-webfilter/javaweb-filter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-annotation/spring-annotation.iml" filepath="$PROJECT_DIR$/spring-annotation/spring-annotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-miscellaneous/spring-miscellaneous.iml" filepath="$PROJECT_DIR$/spring-miscellaneous/spring-miscellaneous.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-xml/spring-xml.iml" filepath="$PROJECT_DIR$/spring-xml/spring-xml.iml" />
       <module fileurl="file://$PROJECT_DIR$/springmvc-analysis/springmvc-analysis.iml" filepath="$PROJECT_DIR$/springmvc-analysis/springmvc-analysis.iml" />
-      <module fileurl="file://$PROJECT_DIR$/web-distributed/web-distributed.iml" filepath="$PROJECT_DIR$/web-distributed/web-distributed.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-distributed/web-distributed.iml" filepath="$PROJECT_DIR$/spring-distributed/web-distributed.iml" />
       <module fileurl="file://$PROJECT_DIR$/zkn-javaweb.iml" filepath="$PROJECT_DIR$/zkn-javaweb.iml" />
     </modules>
   </component>

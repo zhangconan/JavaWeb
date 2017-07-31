@@ -8,7 +8,11 @@
     <modelVersion>4.0.0</modelVersion>
     <!--子模块-->
     <modules>
-        <module>javaweb-filter</module>
+        <module>spring-webfilter</module>
+        <module>spring-annotation</module>
+        <module>spring-xml</module>
+        <module>springmvc-analysis</module>
+        <module>spring-miscellaneous</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

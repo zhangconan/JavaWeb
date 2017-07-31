@@ -6,7 +6,7 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>javaweb-filter</artifactId>
+    <artifactId>spring-webfilter</artifactId>
     <packaging>war</packaging>
     <name>javaweb-filter Maven Webapp</name>
     <url>http://maven.apache.org</url>
@@ -41,6 +41,6 @@
         </dependency>
     </dependencies>
     <build>
-        <finalName>javaweb-filter</finalName>
+        <finalName>spring-webfilter</finalName>
     </build>
 </project>

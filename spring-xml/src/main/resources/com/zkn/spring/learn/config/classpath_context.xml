@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="location" value="classpath:com/zkn/spring/learn/config/classpath_context.properties"/>
+    </bean>
+
+    <bean name="firstExampleBean" class="com.zkn.spring.learn.bean.FirstExampleBean">
+        <property name="userName" value="${userName}"/>
+    </bean>
+</beans>

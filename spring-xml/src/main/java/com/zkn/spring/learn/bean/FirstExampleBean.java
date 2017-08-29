@@ -3,7 +3,7 @@ package com.zkn.spring.learn.bean;
 /**
  * Created by zkn on 2017/8/1.
  */
-public class FirstExampleBean  {
+public class FirstExampleBean {
     /**
      * 用户名
      */
@@ -15,5 +15,10 @@ public class FirstExampleBean  {
 
     public void setUserName(String userName) {
         this.userName = userName;
+    }
+
+    public FirstExampleBean() {
+
+        System.out.println("我被初始化了。。。。。。");
     }
 }

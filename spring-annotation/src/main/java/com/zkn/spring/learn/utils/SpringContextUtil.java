@@ -1,21 +1,22 @@
-package com.zkn.spring.utils;
+package com.zkn.spring.learn.utils;
 
-import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.ApplicationContextAware;
+import org.springframework.context.event.ApplicationContextEvent;
+import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
 
 /**
- * 实现ApplicationContextAware接口
+ * 观察者模式 使用事件监听器
  * Created by zkn on 2017/8/30.
  */
 @Component
-public class SpringContextSecondUtil implements ApplicationContextAware {
+public class SpringContextUtil {
 
     private static ApplicationContext applicationContext;
 
-    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-        this.applicationContext = applicationContext;
+    @EventListener
+    public void handleEvent(ApplicationContextEvent applicationContextEvent) {
+        applicationContext = applicationContextEvent.getApplicationContext();
     }
 
     /**

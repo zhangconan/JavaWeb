@@ -1,9 +1,9 @@
-package com.zkn.spring.util;
+package com.zkn.spring.learn.util;
 
-import com.zkn.spring.utils.SpringApplicationContextUtil;
-import com.zkn.spring.utils.SpringContextBean;
-import com.zkn.spring.utils.SpringContextSecondUtil;
-import com.zkn.spring.utils.SpringContextUtil;
+import com.zkn.spring.learn.utils.SpringApplicationContextUtil;
+import com.zkn.spring.learn.utils.SpringContextBean;
+import com.zkn.spring.learn.utils.SpringContextSecondUtil;
+import com.zkn.spring.learn.utils.SpringContextUtil;
 import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

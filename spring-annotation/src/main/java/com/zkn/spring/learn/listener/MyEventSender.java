@@ -1,4 +1,4 @@
-package com.zkn.spring.listener;
+package com.zkn.spring.learn.listener;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;

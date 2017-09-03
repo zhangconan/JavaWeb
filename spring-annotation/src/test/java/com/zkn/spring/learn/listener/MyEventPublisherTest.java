@@ -1,4 +1,4 @@
-package com.zkn.spring.listener;
+package com.zkn.spring.learn.listener;
 
 import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

@@ -1,4 +1,4 @@
-package com.zkn.spring.listener;
+package com.zkn.spring.learn.listener;
 
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;

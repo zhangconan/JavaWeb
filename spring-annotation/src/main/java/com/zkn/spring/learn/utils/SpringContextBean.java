@@ -1,4 +1,4 @@
-package com.zkn.spring.utils;
+package com.zkn.spring.learn.utils;
 
 import org.springframework.stereotype.Component;
 

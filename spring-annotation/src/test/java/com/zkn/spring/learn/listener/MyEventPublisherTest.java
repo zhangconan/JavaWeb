@@ -11,7 +11,7 @@ public class MyEventPublisherTest {
     @Test
     public void test() {
 
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("com/zkn/spring/listener/applicationContext.xml");
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("com/zkn/spring/learn/listener/applicationContext.xml");
         MyEventSender myEventSender = context.getBean(MyEventSender.class);
         myEventSender.publishEvent();
     }

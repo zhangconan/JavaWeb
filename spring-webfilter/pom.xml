@@ -11,7 +11,7 @@
     <name>javaweb-filter Maven Webapp</name>
     <url>http://maven.apache.org</url>
     <properties>
-        <tomcat-version>8.0.33</tomcat-version>
+        <tomcat-version>8.5.16</tomcat-version>
     </properties>
     <dependencies>
         <!--调试用的-->

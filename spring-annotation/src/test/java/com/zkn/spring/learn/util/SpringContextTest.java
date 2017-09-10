@@ -15,7 +15,7 @@ public class SpringContextTest {
     @Test
     public void test() {
 
-        ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("com/zkn/spring/util/applicationContext.xml");
+        ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("com/zkn/spring/learn/util/applicationContext.xml");
         SpringApplicationContextUtil springApplicationContextUtil = applicationContext.getBean(SpringApplicationContextUtil.class);
         ((SpringContextBean) springApplicationContextUtil.getBean(SpringContextBean.class)).test();
         ((SpringContextBean) SpringContextUtil.getBean(SpringContextBean.class)).test();

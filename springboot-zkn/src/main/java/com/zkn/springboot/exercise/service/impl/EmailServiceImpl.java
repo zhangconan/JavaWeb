@@ -1,11 +1,13 @@
 package com.zkn.springboot.exercise.service.impl;
 
 import com.zkn.springboot.exercise.service.EmailService;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 /**
  * Created by zkn on 2017/9/3.
  */
+@Primary
 @Service
 public class EmailServiceImpl implements EmailService {
     /**

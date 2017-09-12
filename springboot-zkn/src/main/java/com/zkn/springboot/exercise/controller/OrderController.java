@@ -3,6 +3,7 @@ package com.zkn.springboot.exercise.controller;
 import com.zkn.springboot.exercise.domain.OrderParam;
 import com.zkn.springboot.exercise.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class OrderController {
 
     @Autowired
+    @Qualifier("orderService")
     private OrderService orderService;
 
     @RequestMapping("createOrder")

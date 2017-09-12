@@ -10,7 +10,7 @@ import javax.annotation.Resource;
 /**
  * Created by zkn on 2017/9/3.
  */
-@Service
+@Service(value = "orderService")
 public class OrderServiceImpl implements OrderService {
 
     @Resource(name = "orderValidator")

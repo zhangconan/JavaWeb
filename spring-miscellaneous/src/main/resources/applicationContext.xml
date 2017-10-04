@@ -15,6 +15,7 @@
     <!--扫描基础包 这里要注意的是如果SpringMVC和Spring扫描的包是一样的话，AOP的配置可能会失效-->
     <context:component-scan base-package="com.zkn.spring.miscellaneous.service"/>
     <context:component-scan base-package="com.zkn.spring.miscellaneous.aop"/>
+    <context:component-scan base-package="com.zkn.spring.miscellaneous.lifecycle"/>
     <!--配置AOP proxy-target-class为true的时候是用Cglib动态代理，false的时候启用JDK动态代理-->
     <!--自我调用的第一种解决方式 设置expose-proxy=true 在被代理的类中通过AopContext获取被代理的对象，然后通过代理对象调用方法
         这种方式的缺点是：需要手工修改每个代理类

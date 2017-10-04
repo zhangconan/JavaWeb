@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
 
-    /**
-     * Created by zkn on 2017/9/7.
-     */
-    @RestController
-    public class AutowiredRequestController {
+/**
+ * Created by zkn on 2017/9/7.
+ */
+@RestController
+public class AutowiredRequestController {
 
     @Autowired
     private HttpServletRequest request;

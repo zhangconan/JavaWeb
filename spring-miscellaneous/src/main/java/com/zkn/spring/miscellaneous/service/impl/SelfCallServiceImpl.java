@@ -4,6 +4,7 @@ import javax.annotation.PostConstruct;
 
 import com.zkn.spring.miscellaneous.service.SelfCallService;
 import com.zkn.spring.miscellaneous.service.SelfCallWrapperService;
+import com.zkn.utils.ThreadLocalUtil;
 import org.springframework.aop.framework.AopContext;
 import org.springframework.aop.support.AopUtils;
 import org.springframework.beans.factory.InitializingBean;
@@ -24,7 +25,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class SelfCallServiceImpl implements SelfCallService/*,InitializingBean*/, SelfCallWrapperService {
     //注入ApplicationContext对象
-    @Autowired
+    //@Autowired
     //(1)
     //private ApplicationContext applicationContext;
     //(2)
@@ -55,6 +56,7 @@ public class SelfCallServiceImpl implements SelfCallService/*,InitializingBean*/
         //selfCallService.selfCallB();
         //this.selfCallB();
         //第三种方式
+        ThreadLocalUtil.dumpThreadDetails();
         selfCall.selfCallB();
     }
 

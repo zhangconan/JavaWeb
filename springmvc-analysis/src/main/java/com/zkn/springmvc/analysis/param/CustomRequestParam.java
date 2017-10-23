@@ -24,6 +24,6 @@ public class CustomRequestParam implements Serializable{
     /**
      * 密码
      */
-    private String passWork;
+    private String passWord;
 
 }

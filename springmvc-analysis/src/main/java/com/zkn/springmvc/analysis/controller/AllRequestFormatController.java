@@ -5,6 +5,8 @@ import com.zkn.springmvc.analysis.enums.TrafficEnum;
 import com.zkn.springmvc.analysis.param.CustomRequestParam;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.util.Map;
 
 /**
@@ -90,5 +92,18 @@ public class AllRequestFormatController {
     public String pathVariableRequest(@PathVariable("name") String nama) {
         System.out.println("pathVariable:" + nama);
         return "这是一个pathVariable注解的请求";
+    }
+
+    /**
+     * 接收Request和Response的请求
+     *
+     * @param request
+     * @param response
+     * @return
+     */
+    @RequestMapping("requestAndResponseRequest")
+    public String requestAndResponseRequest(HttpServletRequest request, HttpServletResponse response) {
+        System.out.println("userName" + request.getParameter("userName"));
+        return "这是一个接收Request和Response的请求";
     }
 }

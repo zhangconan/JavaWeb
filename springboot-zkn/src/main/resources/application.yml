@@ -1,7 +1,0 @@
-##设置端口号
-server:
-  port: 8003
-
-spring:
-  profiles:
-    active:

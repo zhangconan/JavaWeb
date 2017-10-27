@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-miscellaneous/spring-miscellaneous.iml" filepath="$PROJECT_DIR$/spring-miscellaneous/spring-miscellaneous.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-webfilter/spring-webfilter.iml" filepath="$PROJECT_DIR$/spring-webfilter/spring-webfilter.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-xml/spring-xml.iml" filepath="$PROJECT_DIR$/spring-xml/spring-xml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springCloudProducer/springCloudProducer.iml" filepath="$PROJECT_DIR$/springCloudProducer/springCloudProducer.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-zkn/springboot-new.iml" filepath="$PROJECT_DIR$/springboot-zkn/springboot-new.iml" />
       <module fileurl="file://$PROJECT_DIR$/springmvc-analysis/springmvc-analysis.iml" filepath="$PROJECT_DIR$/springmvc-analysis/springmvc-analysis.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-distributed/web-distributed.iml" filepath="$PROJECT_DIR$/spring-distributed/web-distributed.iml" />

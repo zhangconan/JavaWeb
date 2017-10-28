@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/springCloudProducer/springCloudProducer.iml" filepath="$PROJECT_DIR$/springCloudProducer/springCloudProducer.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-zkn/springboot-new.iml" filepath="$PROJECT_DIR$/springboot-zkn/springboot-new.iml" />
       <module fileurl="file://$PROJECT_DIR$/springmvc-analysis/springmvc-analysis.iml" filepath="$PROJECT_DIR$/springmvc-analysis/springmvc-analysis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springmvc-annotation-analysis/springmvc-annotation-analysis.iml" filepath="$PROJECT_DIR$/springmvc-annotation-analysis/springmvc-annotation-analysis.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-distributed/web-distributed.iml" filepath="$PROJECT_DIR$/spring-distributed/web-distributed.iml" />
       <module fileurl="file://$PROJECT_DIR$/zkn-javaweb.iml" filepath="$PROJECT_DIR$/zkn-javaweb.iml" />
     </modules>

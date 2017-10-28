@@ -4,12 +4,17 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
+import org.springframework.http.MediaType;
+import org.springframework.http.converter.StringHttpMessageConverter;
+import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.web.context.ServletContextAware;
+import org.springframework.web.servlet.HandlerAdapter;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 import org.thymeleaf.TemplateEngine;
@@ -20,6 +25,7 @@ import org.thymeleaf.templateresolver.ITemplateResolver;
 import org.thymeleaf.templateresolver.ServletContextTemplateResolver;
 
 import javax.servlet.ServletContext;
+import java.util.Arrays;
 
 /**
  * Create By ZKN
@@ -101,11 +107,25 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter implements ServletCont
         configurer.enable();
     }
 
+    /**
+     * 处理静态资源
+     * @param registry
+     */
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/js/**").addResourceLocations("/WEB-INF/resources/js/");
         registry.addResourceHandler("/img/**").addResourceLocations("/WEB-INF/resources/img/");
         super.addResourceHandlers(registry);
+    }
+
+    @Bean
+    public HandlerAdapter requestMappingHandlerAdapter(){
+        RequestMappingHandlerAdapter handlerAdapter = new RequestMappingHandlerAdapter();
+        StringHttpMessageConverter messageConverter = new StringHttpMessageConverter();
+        messageConverter.setSupportedMediaTypes(Arrays.asList(MediaType.valueOf("text/html;charset=UTF-8")));
+        handlerAdapter.getMessageConverters().add(messageConverter);
+        handlerAdapter.getMessageConverters().add(new MappingJackson2HttpMessageConverter());
+        return handlerAdapter;
     }
 
 }

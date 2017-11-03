@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Servlet3Web/servlet3-web.iml" filepath="$PROJECT_DIR$/Servlet3Web/servlet3-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-annotation/spring-annotation.iml" filepath="$PROJECT_DIR$/spring-annotation/spring-annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-distributed/spring-distributed.iml" filepath="$PROJECT_DIR$/spring-distributed/spring-distributed.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-miscellaneous/spring-miscellaneous.iml" filepath="$PROJECT_DIR$/spring-miscellaneous/spring-miscellaneous.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-webfilter/spring-webfilter.iml" filepath="$PROJECT_DIR$/spring-webfilter/spring-webfilter.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-xml/spring-xml.iml" filepath="$PROJECT_DIR$/spring-xml/spring-xml.iml" />

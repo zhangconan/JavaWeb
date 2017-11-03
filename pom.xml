@@ -13,6 +13,8 @@
         <module>spring-xml</module>
         <module>springmvc-analysis</module>
         <module>spring-miscellaneous</module>
+        <module>spring-distributed</module>
+        <module>springmvc-annotation-analysis</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

@@ -10,7 +10,7 @@
     </parent>
     <artifactId>spring-xml</artifactId>
     <properties>
-        <dubbo.version>2.5.3</dubbo.version>
+        <dubbo.version>2.5.7</dubbo.version>
         <zookeeper.version>0.9</zookeeper.version>
         <spring.boot.shared>1.0-SNAPSHOT</spring.boot.shared>
     </properties>
@@ -52,7 +52,6 @@
             <artifactId>zkclient</artifactId>
             <version>${zookeeper.version}</version>
         </dependency>
-
     </dependencies>
     <build>
         <plugins>

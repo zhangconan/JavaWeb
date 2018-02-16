@@ -12,6 +12,7 @@ public class DubboConsumerTest {
     @Test
     public void userInfoServiceTest() {
         ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("com/zkn/spring/learn/dubbo/dubbo-consumer.xml");
+        applicationContext.start();
         UserService userService = applicationContext.getBean(UserService.class);
         System.out.println(userService.getUserName());
     }

@@ -1,4 +1,4 @@
-package com.zkn.spring.learn.aop.config;
+package com.zkn.spring.learn.aop.program.config;
 
 import org.springframework.aop.MethodBeforeAdvice;
 

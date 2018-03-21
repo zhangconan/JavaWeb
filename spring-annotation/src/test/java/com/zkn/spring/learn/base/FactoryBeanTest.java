@@ -14,5 +14,9 @@ public class FactoryBeanTest {
         ClassPathXmlApplicationContext cac = new ClassPathXmlApplicationContext("classpath:com/zkn/spring/learn/base/applicationContext.xml");
         FactoryBeanService beanService = cac.getBean(FactoryBeanService.class);
         beanService.testFactoryBean();
+        beanService = cac.getBean(FactoryBeanService.class);
+        beanService.testFactoryBean();
+        beanService = (FactoryBeanService) cac.getBean("&factoryBeanLearn");
+        beanService.testFactoryBean();
     }
 }

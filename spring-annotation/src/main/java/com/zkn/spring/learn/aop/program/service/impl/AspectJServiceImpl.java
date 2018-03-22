@@ -3,7 +3,9 @@ package com.zkn.spring.learn.aop.program.service.impl;
 import com.zkn.spring.learn.aop.program.service.AspectJService;
 
 /**
- * Created by zkn on 2017/10/7.
+ *
+ * @author zkn
+ * @date 2017/10/7
  */
 public class AspectJServiceImpl implements AspectJService {
 

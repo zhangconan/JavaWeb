@@ -26,5 +26,9 @@ public class AspectJProxyFactoryLearn {
         AspectJService proxyService = aspectJProxyFactory.getProxy();
         //进行方法调用
         proxyService.beforeAdvice();
+
+        proxyService.afterAdvice();
+
+        proxyService.afterReturnAdvice();
     }
 }

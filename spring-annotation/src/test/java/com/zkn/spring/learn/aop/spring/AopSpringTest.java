@@ -1,6 +1,7 @@
 package com.zkn.spring.learn.aop.spring;
 
 import com.zkn.spring.learn.aop.spring.service.SpringAopService;
+import com.zkn.spring.learn.service.FactoryBeanService;
 import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -14,5 +15,8 @@ public class AopSpringTest {
         ClassPathXmlApplicationContext ac = new ClassPathXmlApplicationContext("classpath:com/zkn/spring/learn/aop/spring/applicationContext.xml");
         SpringAopService aopService = ac.getBean(SpringAopService.class);
         aopService.testBeforeAdvice();
+
+        FactoryBeanService factoryBeanService = (FactoryBeanService) ac.getBean("factoryBeanMethodInterceptor");
+        factoryBeanService.testFactoryBean();
     }
 }

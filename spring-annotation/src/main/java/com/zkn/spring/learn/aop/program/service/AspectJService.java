@@ -14,4 +14,11 @@ public interface AspectJService {
      * 测试后置通知
      */
     void afterAdvice();
+
+    /**
+     * 后置返回通知
+     *
+     * @return
+     */
+    String afterReturnAdvice();
 }

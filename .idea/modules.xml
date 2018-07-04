@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Servlet3Web/servlet3-web.iml" filepath="$PROJECT_DIR$/Servlet3Web/servlet3-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-annotation/spring-annotation.iml" filepath="$PROJECT_DIR$/spring-annotation/spring-annotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-distributed/spring-distributed.iml" filepath="$PROJECT_DIR$/spring-distributed/spring-distributed.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-miscellaneous/spring-miscellaneous.iml" filepath="$PROJECT_DIR$/spring-miscellaneous/spring-miscellaneous.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-webfilter/spring-webfilter.iml" filepath="$PROJECT_DIR$/spring-webfilter/spring-webfilter.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-xml/spring-xml.iml" filepath="$PROJECT_DIR$/spring-xml/spring-xml.iml" />
-      <module fileurl="file://$PROJECT_DIR$/springCloudProducer/springCloudProducer.iml" filepath="$PROJECT_DIR$/springCloudProducer/springCloudProducer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/springboot-zkn/springboot-new.iml" filepath="$PROJECT_DIR$/springboot-zkn/springboot-new.iml" />
       <module fileurl="file://$PROJECT_DIR$/springmvc-analysis/springmvc-analysis.iml" filepath="$PROJECT_DIR$/springmvc-analysis/springmvc-analysis.iml" />
       <module fileurl="file://$PROJECT_DIR$/springmvc-annotation-analysis/springmvc-annotation-analysis.iml" filepath="$PROJECT_DIR$/springmvc-annotation-analysis/springmvc-annotation-analysis.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-distributed/web-distributed.iml" filepath="$PROJECT_DIR$/spring-distributed/web-distributed.iml" />
       <module fileurl="file://$PROJECT_DIR$/zkn-javaweb.iml" filepath="$PROJECT_DIR$/zkn-javaweb.iml" />
     </modules>
   </component>

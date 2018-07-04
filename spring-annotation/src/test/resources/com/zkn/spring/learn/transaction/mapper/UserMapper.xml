@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zkn.spring.learn.transaction.mapper.UserMapper">
+
+    <insert id="addUser" parameterType="com.zkn.spring.learn.transaction.domain.UserDO" useGeneratedKeys="true"
+            keyProperty="id">
+        insert user(user_name,pass_word,address,create_date) values (#{userName},#{passWord},#{address},now())
+    </insert>
+</mapper>

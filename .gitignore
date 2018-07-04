@@ -8,3 +8,11 @@
 target/
 /target/
 /Servlet3Web/target/
+/spring-annotation/spring-annotation.iml
+/zkn-javaweb.iml
+/spring-distributed/spring-distributed.iml
+/spring-miscellaneous/spring-miscellaneous.iml
+/spring-webfilter/spring-webfilter.iml
+/spring-xml/spring-xml.iml
+/springmvc-analysis/springmvc-analysis.iml
+/springmvc-annotation-analysis/springmvc-annotation-analysis.iml

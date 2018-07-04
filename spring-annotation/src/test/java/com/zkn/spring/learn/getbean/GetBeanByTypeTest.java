@@ -1,5 +1,6 @@
 package com.zkn.spring.learn.getbean;
 
+import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
@@ -8,7 +9,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  **/
 public class GetBeanByTypeTest {
 
+    @Test
     public void test() {
-        new ClassPathXmlApplicationContext("classpath:");
+        new ClassPathXmlApplicationContext("classpath:com/zkn/spring/learn/getbean/applicationContext.xml");
     }
 }

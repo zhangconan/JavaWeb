@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zkn.spring.learn.transaction.mapper.CityChinaMapper">
+
+    <!-- 得到省下面所有市的信息 -->
+    <insert id="insert" parameterType="com.zkn.spring.learn.transaction.domain.CityChinaDO" useGeneratedKeys="true"
+            keyProperty="id">
+        insert city_china(ename,ecityname,ccityname) values (#{ename},#{ecityName},#{ccityName})
+    </insert>
+</mapper>

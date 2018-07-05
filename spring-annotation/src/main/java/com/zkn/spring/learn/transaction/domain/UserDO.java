@@ -18,13 +18,13 @@ public class UserDO implements Serializable {
 
     private static final long serialVersionUID = -2910288813933923034L;
     /**
-     * 姓名
-     */
-    private String userName;
-    /**
      * 主键ID
      */
     private Long id;
+    /**
+     * 姓名
+     */
+    private String userName;
     /**
      * 密码
      */

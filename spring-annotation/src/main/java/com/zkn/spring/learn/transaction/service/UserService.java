@@ -11,6 +11,7 @@ public interface UserService {
      * 插入用户
      *
      * @param userDO
+     * @return
      */
-    void insert(UserDO userDO);
+    Long insert(UserDO userDO);
 }

@@ -1,5 +1,6 @@
 package com.zkn.spring.learn.transaction;
 
+import com.zkn.spring.learn.transaction.domain.UserDO;
 import com.zkn.spring.learn.transaction.service.UserService;
 import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -13,5 +14,10 @@ public class TransactionTest {
     public void test() {
         ClassPathXmlApplicationContext ca = new ClassPathXmlApplicationContext("classpath:com/zkn/spring/learn/transaction/applicationContext.xml");
         UserService userService = ca.getBean(UserService.class);
+        UserDO userDO = new UserDO();
+        userDO.setUserName("张安");
+        userDO.setPassWord("********");
+        userDO.setAddress("天安门");
+        userService.insert(userDO);
     }
 }
